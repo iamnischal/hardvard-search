@@ -2,30 +2,36 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
 body{
-    height: 100vh;
+    height: 67vh;
     width: 100vw;
     display: flex;
+    flex-direction: column;
     background-color: #202124;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    justify-content: space-between;
+
 }
 .sbar{
-    height: 7vh;
-    width: 30vw;
-    border-radius: 20px;
-    border: 1px solid #5F6368;
+    height: 44px;
+    width: 400px;
+    border-radius: 24px;
+    border: 1px solid #5f6368;
     background-color: #202124;
     color: #DCEAE1;
-    padding-left: 10px; 
+    padding-left: 15px; 
     font-size: 1rem;
+    margin-bottom: 40px;
     outline: none;
 }
 .sbmit{
     margin-top: 20px;
-    height: 5vh;
+    height: 36px;
+    min-width: 54px;
+    border-radius: 4px;
     padding: 0 2vw;
     outline: none;
     background: #313034;
@@ -35,4 +41,24 @@ body{
 }
 .sbmit:hover{
     cursor: pointer;
+}
+.main{
+    height: 40vh;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+}
+.glogo{
+    margin-bottom: 40px;
+}
+.nav{
+    text-align: right;
+    padding: 30px;
+    
+}
+.nav a{
+    text-decoration: none;
+    color: #DCEAE1;
+    margin: 0 5px;
 }
