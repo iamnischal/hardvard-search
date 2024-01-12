@@ -1,20 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Search</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>    
-        <div class="nav">
-            <a href="index.html">Google Search</a>
-            <a href="image.html">Image Search</a>  
-        </div>
-        <div class="main">
-            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png" alt="logo" class="glogo">
-                <form action="https://google.com/search">
-                    <input type="text" name="q" placeholder="Search Google..." class="sbar"><br>
-                <center> <input type="submit" value="Google Search" class="sbmit"></center>  
-                </form>
-        </div>
-    </body>
+  <head>
+    <title>Search</title>
+    <link rel="stylesheet" href="advance.css" />
+  </head>
+  <body>
+    <div class="nav">
+      <img
+        src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg"
+        alt="logo"
+        class="glogo"
+      />
+      <div class="links">
+        <a href="index.html">Google Search</a>
+        <a href="image.html">Image Search</a>
+      </div>
+    </div>
+    <p class="txt">Advanced Search</p>
+    <hr>
+    <br>
+    <div class="main">
+      <p class="stxt">Find Pages with...</p>
+      <br />
+      <form action="https://google.com/search">
+        <table>
+          <tr>
+            <td class="des">all these words:</td>
+            <td>
+              <input
+                type="text"
+                name="q"
+                class="sbar"
+                autocomplete="off"
+              />
+            </td>
+          </tr> 
+          <tr>
+            <td class="des">this exact word or phrase:</td>
+            <td><input
+                type="text"
+                name="q"
+                class="sbar"
+                autocomplete="off"
+              /></td>
+          </tr>
+          <tr>
+            <td class="des">any of these words: </td>
+            <td><input
+                type="text"
+                name="q"
+                class="sbar"
+                autocomplete="off"
+              /></td>
+          </tr>
+          <tr>
+            <td class="des">none of these words: </td>
+            <td><input
+                type="text"
+                name="q"
+                class="sbar"
+                autocomplete="off"
+              /></td>
+          </tr>
+          <tr>
+            <td class="btn">
+              <center>
+                <input type="submit" value="Advanced Search" class="sbmit" />
+              </center>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
 </html>
